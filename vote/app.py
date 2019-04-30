@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+
 from flask import Flask, render_template, request, make_response, g
 from redis import Redis
 import os
@@ -5,8 +7,8 @@ import socket
 import random
 import json
 
-option_a = os.getenv('OPTION_A', "Cats")
-option_b = os.getenv('OPTION_B', "Dogs")
+option_a = os.getenv('OPTION_A', "DXC")
+option_b = os.getenv('OPTION_B', "LA POSTE")
 hostname = socket.gethostname()
 
 app = Flask(__name__)
